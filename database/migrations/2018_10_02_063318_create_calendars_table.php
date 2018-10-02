@@ -15,7 +15,7 @@ class CreateCalendarsTable extends Migration
     {
         Schema::create('calendars', function (Blueprint $table) {
             $table->increments('calendarId');
-            $table->boolean('date_status'); //booked or not
+            $table->boolean('dateStatus'); //booked or not
 
             $table->unsignedInteger('Fid');
             $table->foreign('Fid')->references('freelancerId')->on('freelancer_profiles');

@@ -17,12 +17,14 @@ class CreateUsersTable extends Migration
             $table->increments('userId');
             $table->string('email');
             $table->string('userName');
+            $table->string('fName');
+            $table->string('lName');
             $table->string('password');
             $table->date('DOB');
             $table->string('address');
-            $table->boolean('acc_Status');
-            $table->string('pic_URL');
-            $table->string('phone_num');
+            $table->boolean('accStatus');
+            $table->string('picURL');
+            $table->string('phoneNum');
             $table->timestamps();
         });
     }

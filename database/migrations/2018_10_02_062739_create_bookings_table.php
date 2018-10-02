@@ -15,11 +15,11 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->increments('bookingId');
-            $table->date('start_date');
-            $table->date('end_date');
+            $table->date('startDate');
+            $table->date('endDate');
             $table->string('description');
-            $table->boolean('booking_status'); // Freelancer confirmed or not
-            $table->integer('total_cost');
+            $table->boolean('bookingStatus'); // Freelancer confirmed or not
+            $table->integer('totalCost');
             $table->smallInteger('tax'); // % tax value
 
             $table->unsignedInteger('Fid');

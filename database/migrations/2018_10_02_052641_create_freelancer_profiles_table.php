@@ -16,9 +16,9 @@ class CreateFreelancerProfilesTable extends Migration
         Schema::create('freelancer_profiles', function (Blueprint $table) {
             $table->increments('freelancerId');
             $table->string('location');
-            $table->bigInteger('hour_Rate');
+            $table->bigInteger('hourRate');
             $table->text('description');
-            $table->string('profile_title');
+            $table->string('profileTitle');
             $table->integer('rating');
 
             $table->unsignedInteger('Uid');
