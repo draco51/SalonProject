@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->date('DOB');
             $table->string('address');
             $table->boolean('acc_Status');
+            $table->string('pic_URL');
+            $table->string('phone_num');
             $table->timestamps();
         });
     }
